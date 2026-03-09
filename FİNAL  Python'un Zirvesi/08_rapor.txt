@@ -1,0 +1,114 @@
+python son hafta ödevi raporu
+
+bu ödevde python’da şimdiye kadar gördüğüm temel konuları adım adım tekrar etmiş oldum ve bunları en son bir mini projede birleştirerek uyguladım. ödevi bir anda yapmak yerine parça parça ilerledim. önce liste, sözlük, döngü ve koşul gibi temel yapıları ayrı dosyalarda çalıştım. daha sonra bunları bir araya getirip veri filtreleme mantığıyla çalışan bir mini proje yaptım. böylece hem konuları tek tek öğrenmiş oldum hem de en sonda hepsini birlikte kullanmayı gördüm.
+
+1) 01_listeler.py
+
+ilk dosyada liste yapısını öğrendim. listelerin birden fazla veriyi tek yerde tutmak için kullanıldığını gördüm. isimler, yaşlar ve karışık veriler içeren listeler oluşturdum. ayrıca listeden eleman çekmeyi ve len() ile listedeki eleman sayısını bulmayı uyguladım. bu dosya benim için en temel başlangıç kısmı oldu çünkü daha sonra kullandığım birçok veri yapısının temeli burada oturdu.
+
+bu dosyada öğrendiğim şeyler:
+- liste oluşturma
+- listeden eleman alma
+- indeks mantığı
+- len() kullanımı
+
+2) 02_sozlukler.py
+
+bu dosyada sözlük yani dictionary yapısını öğrendim. burada verileri anahtar-değer mantığıyla tutmayı gördüm. örnek olarak bir kişinin isim, soyisim, yaş ve bölüm bilgilerini tek bir sözlük içinde tuttum. daha sonra sözlükten veri alma, yeni bilgi ekleme ve var olan bilgiyi güncelleme işlemleri yaptım. bu dosya önemliydi çünkü mini projede kişi verilerini düzenli tutmak için sözlük yapısını kullandım.
+
+bu dosyada öğrendiğim şeyler:
+- sözlük oluşturma
+- anahtar ve değer mantığı
+- sözlükten veri çekme
+- yeni bilgi ekleme
+- bilgi güncelleme
+
+3) 03_for_if_mantigi.py
+
+bu dosyada for döngüsü ve if koşulu üzerinde çalıştım. listedeki verileri tek tek gezmeyi ve belli bir şartı sağlayanları ayırmayı öğrendim. bu bölüm daha sonraki filtreleme işlemlerinin temelini oluşturdu. çünkü veri filtreleme yaparken aslında önce veriyi geziyoruz, sonra da belli bir kurala uyup uymadığına bakıyoruz.
+
+bu dosyada öğrendiğim şeyler:
+- for döngüsü ile veri gezme
+- if ile şart kontrol etme
+- for ve if’i birlikte kullanma
+
+4) 04_listede_sozlukler.py
+
+bu dosyada liste ve sözlük yapısını birleştirdim. yani elimde artık sadece düz bir liste değil, kişi bilgileri içeren sözlüklerden oluşan bir liste vardı. her kişinin isim ve yaş bilgisini sözlük içinde tuttum ve bu kişileri for döngüsü ile tek tek gezerek verileri ekrana yazdırdım. bu aşamada mini proje için gerekli veri yapısını daha net öğrenmiş oldum.
+
+bu dosyada öğrendiğim şeyler:
+- liste içinde sözlük kullanma
+- kişi bilgilerini daha düzenli tutma
+- kisi["isim"] ve kisi["yas"] şeklinde veri çekme
+
+5) 05_normal_filtreleme.py
+
+bu dosyada veri filtreleme işlemini uzun ve klasik yöntemle yaptım. önce boş listeler oluşturdum. daha sonra kişileri tek tek gezip şartı sağlayanları append() ile yeni listeye ekledim. burada yaşı 20’den büyük olanları ayrı bir listeye, ismi a ile başlayanları ayrı bir listeye aktardım. bu dosya benim için veri filtreleme mantığını gerçekten anlamamı sağlayan yer oldu çünkü işlemi adım adım burada gördüm.
+
+bu dosyada öğrendiğim şeyler:
+- boş liste oluşturma
+- append() kullanımı
+- şartı sağlayan verileri yeni listeye aktarma
+- veri filtreleme mantığının uzun hali
+
+6) 06_list_comprehension.py
+
+bu dosyada aynı filtreleme işleminin daha kısa şekilde de yazılabildiğini gördüm. yani normalde birkaç satırda yaptığım işlemin python’da daha kısa bir yöntemle de kurulabildiğini öğrendim. ben uzun hali daha anlaşılır bulduğum için mantığı önce uzun yöntem üzerinden oturttum ama kısa yazımın ne olduğunu ve neden kullanıldığını da görmüş oldum. böylece pythonic denilen daha kısa yazım tarzına da giriş yapmış oldum.
+
+bu dosyada öğrendiğim şeyler:
+- aynı işlemin kısa yazımı da olabildiği
+- python’da daha kısa ve şık yazım mantığı
+- uzun yöntem ile kısa yöntemin aynı sonuca çıkabildiği
+
+7) 07_mini_proje.py
+
+bu dosya ödevin asıl proje kısmı oldu. burada önceki dosyalarda öğrendiğim temel yapıları bir araya getirip gelişmiş veri filtresi adlı mini projeyi yaptım.
+
+projede elimde isim ve yaş bilgileri bulunan çok sayıda kişi verisi vardı. amacım bu verileri belli kurallara göre filtrelemekti. yani bir yandan yaşı belirli bir sınırdan büyük olan kişileri bulmak, diğer yandan da ismi belirli bir harf ile başlayan kişileri seçmekti. böylece elimdeki veriler üzerinde seçim yapmış ve filtreleme mantığını uygulamış oldum.
+
+mini projede yaptığım şeyler:
+- kişi verilerini oluşturdum
+- bu verileri düzenli bir yapıda topladım
+- kullanıcıdan yaş sınırı ve başlangıç harfi aldım
+- yaşı girilen sınırdan büyük olanları seçtim
+- ismi girilen harf ile başlayanları seçtim
+- sonuçları ayrı ayrı ekrana yazdırdım
+- toplam kaç kişinin filtreye uyduğunu gösterdim
+
+mini projede kullandığım önemli yapılar:
+
+def:
+projede veri_filtresi adında bir fonksiyon tanımladım. bunu kullanma sebebim filtreleme işlemini düzenli bir şekilde tek yerde toplamak oldu. böylece kod daha toplu ve daha anlaşılır hale geldi. fonksiyon içinde kişi verileri işlendi ve sonuçlar dışarıya geri verildi.
+
+*args:
+fonksiyonda *kisiler kullandım. bunun amacı fonksiyona sınırsız sayıda kişi verisi gönderebilmekti. yani kişi sayısını sabit tutmak zorunda kalmadım. kaç tane kişi verisi verirsem vereyim fonksiyon onları alıp işleyebildi.
+
+**kwargs:
+fonksiyonda **ayarlar kullandım. bunun amacı yaş sınırı ve başlangıç harfi gibi filtre ayarlarını dışarıdan gönderebilmekti. böylece filtre kuralları sabit kalmadı. kullanıcı ne girerse programa o ayarlar gitmiş oldu ve sonuçlar buna göre değişti.
+
+input():
+mini projede kullanıcıdan veri almak için input() kullandım. program çalıştığında kullanıcıdan bir yaş sınırı ve bir başlangıç harfi istedim. bu sayede proje sadece sabit verilerle çalışan bir örnek olmaktan çıkıp biraz daha etkileşimli bir hale geldi.
+
+int():
+input ile alınan yaş bilgisi yazı olarak geldiği için bunu int() ile sayıya çevirdim. çünkü yaş karşılaştırmasını yapabilmek için sayı kullanmak gerekiyor. bu kısım bana input ile alınan verinin her zaman direkt kullanılmadığını da göstermiş oldu.
+
+get():
+ayarlar içinden değer almak için get() kullandım. burada amaç kullanıcı bir değer girmezse varsayılan değeri kullanmaktı. yani yaş verilmezse 20, harf verilmezse a kullanılacak şekilde kodu düzenledim. bu yapı programın daha güvenli ve daha esnek çalışmasını sağladı.
+
+lower():
+harf kontrolünde hem büyük hem küçük harfin çalışması için lower() kullandım. böylece kullanıcı A veya a yazsa bile program aynı mantıkla çalıştı. ayrıca kişi isimlerini de küçük harfe çevirerek kontrol yaptım. bu sayede Ahmet ile ahmet aynı şekilde algılandı.
+
+append():
+şartı sağlayan kişileri yeni listelere eklemek için append() kullandım. bir liste yaş filtresine uyanları, diğer liste de harf filtresine uyanları tuttu.
+
+return:
+fonksiyon sonunda iki ayrı sonucu geri döndürdüm. biri yaşı sınırdan büyük olan kişiler, diğeri ise seçilen harfle başlayan kişiler oldu. yani fonksiyon sadece işlem yapmakla kalmadı, bulduğu sonuçları da dışarı vermiş oldu.
+
+mini projenin genel mantığı:
+elimde birçok kişi verisi vardı. bu kişileri tek tek kontrol ettim. yaşı belirlenen sınırdan büyük olanları bir tarafa ayırdım. ismi belirlenen harfle başlayanları da başka bir tarafa ayırdım. yani aslında elimdeki verileri belirli kurallara göre seçip filtrelemiş oldum. bu da veri filtreleme mantığını daha iyi anlamamı sağladı.
+
+mini projede öğrendiğim en önemli şey:
+python’da veriler sadece tutulmuyor, aynı zamanda işlenebiliyor, kontrol edilebiliyor ve belli şartlara göre ayrılabiliyor. özellikle yapay zeka ve veri işleme tarafına geçmeden önce bu mantığı öğrenmek bence önemliydi. çünkü ileride çok fazla veri arasında seçme, ayırma ve filtreleme mantığı kullanılacak.
+
+genel sonuç:
+bu ödevde liste, sözlük, for, if, fonksiyon, input, int, append, get, lower, *args ve **kwargs gibi yapıları kullandım. bunları önce ayrı ayrı öğrenip sonra mini projede birleştirdim. bence bu ödev sayesinde hem python’da temel yapıları daha iyi pekiştirdim hem de veri filtreleme mantığını daha iyi anlamış oldum. ayrıca uzun kod ile daha kısa yazım mantığı arasındaki farkı da görmüş oldum.
